@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    /* background-image: url(images/background.jpg); */
+    background: linear-gradient(47deg, rgba(2,0,36,1) 0%, rgba(43,49,55,1) 0%, rgba(65,83,85,1) 100%);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+body{
+    background: linear-gradient(180deg, rgba(21,24,24,1) 0%, rgba(0,0,0,1) 35%, rgba(112,32,32,1) 100%);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-color: black;
+}
+.sliding-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+    position: relative;
+    padding: 15px 50px;
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #3c90c2, #3c90c2, #3c90c2, #3c90c2);
+    border-image-slice: 1;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 2px;
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+  }
+  .sliding-button:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    z-index: -1;
+    color: white;
+    background: linear-gradient(180deg, #3c90c2, #3c90c2, #3c90c2, #3c90c2);
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+    display: inline-block;
+  }
+  .sliding-button:hover {
+    background: rgba(255, 255, 255, 0);
+  }
+  .sliding-button:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+
+  }
+.nav-tabs {
+    border-bottom: 1px solid #2aaefa;
+    padding-bottom: 10px;
+}
+.nav-tabs .nav-item.show .nav-link {
+    color: #ec2a2a;
+    background-color: #1e1e1e;
+    border-color: #ff0101 #ff0101 #1e1e1e;
+}
+.navbar{
+
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+
+    
+
+
+}
+.nav-tabs .nav-link {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 1px solid #00000000;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    transition: 0.5s;
+}
+.logo{
+    padding-top: 0px;
+    width: 250px;
+    cursor: pointer;
+
+}
+.cart{
+    width: 40px;
+    cursor: pointer;
+    
+}
+nav{
+    padding-top: 20px;
+    flex: 1;
+    padding-left: 10px;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:#2aaefa;
+
+
+}
